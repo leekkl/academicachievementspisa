@@ -5,6 +5,9 @@ library(ggiraph)
 library(patchwork) 
 library(shiny)
 library(plotly)
+library(rsconnect)
+
+rsconnect::writeManifest()
 
 PISA_dataset_mean <- read_xlsx("PISA_dataset3_mean.xlsx")
 
