@@ -13,6 +13,7 @@ PISA_dataset_mean <- read_xlsx("PISA_dataset3_mean.xlsx")
 
 ui <- fluidPage(
   titlePanel("Academic achievements among 15-year olds, by country"),
+  h4(p("PI: Hyungoo Lee", style = "font-size: 10px;")),
   fluidPage(
     mainPanel(
       girafeOutput("my_plots")
@@ -35,7 +36,7 @@ server <- function(input, output, session) {
             axis.text.y = element_text(size = 5, color = "grey40"),
             axis.title.x = element_text(size = 9),
             axis.title.y = element_text(size = 9),
-            main.title = element_text(size = 10)
+            title = element_text(size = 10)
       ) +
       labs(x = "Average science scores among 15-year olds", y = "Country", title = "Violin plots of science scores by country, max ordered")
     
@@ -50,7 +51,7 @@ server <- function(input, output, session) {
             axis.text.y = element_text(size = 5, color = "grey40"),
             axis.title.x = element_text(size = 9),
             axis.title.y = element_text(size = 9),
-            main.title = element_text(size = 10)
+            title = element_text(size = 10)
       ) +
       labs(x = "Average science scores among 15-year olds", y = "Country", title = "Violin plots of science scores by country, mean ordered")
     
@@ -65,7 +66,7 @@ server <- function(input, output, session) {
             axis.text.y = element_text(size = 5, color = "grey40"),
             axis.title.x = element_text(size = 9),
             axis.title.y = element_text(size = 9),
-            main.title = element_text(size = 10)
+            title = element_text(size = 10)
       ) +
       labs(x = "Average reading scores among 15-year olds", y = "Country", title = "Violin plots of reading scores by country, max ordered")
     
@@ -80,7 +81,7 @@ server <- function(input, output, session) {
             axis.text.y = element_text(size = 5, color = "grey40"),
             axis.title.x = element_text(size = 9),
             axis.title.y = element_text(size = 9),
-            main.title = element_text(size = 10)
+            title = element_text(size = 10)
       ) +
       labs(x = "Average reading scores among 15-year olds", y = "Country", title = "Violin plots of reading scores by country, mean ordered")
     
