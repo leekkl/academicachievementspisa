@@ -12,7 +12,7 @@ rsconnect::writeManifest()
 PISA_dataset_mean <- read_xlsx("PISA_dataset3_mean.xlsx")
 
 ui <- fluidPage(
-  titlePanel("Academic achievements among 15-year olds, by country"),
+  titlePanel("Academic achievements among 15-year-olds, by country"),
   h4(p("PI: Hyungoo Lee", style = "font-size: 10px;")),
   fluidPage(
     mainPanel(
